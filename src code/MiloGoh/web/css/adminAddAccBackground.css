@@ -1,0 +1,16 @@
+    body {
+      background-image: url("../pic/manager_SignInBackground.jpg") !important;
+       background-repeat: no-repeat !important;
+       background-position-x: 120px !important;
+       background-position-y: -380px !important;
+       background-size: 2000px !important;
+    }
+    
+    #addStaffPage.dark-mode,
+    #staffEditProfilePage.dark-mode{
+      background-image: url("../pic/manager_SignInBackgroundDarkMode.jpg") !important;
+       background-repeat: no-repeat !important;
+       background-position-x: 120px !important;
+       background-position-y: -380px !important;
+       background-size: 2000px !important;
+    }

@@ -1,0 +1,67 @@
+:root{
+  --input-padding-x: 1.5rem;
+  --input-padding-y: 0.75rem;
+}
+
+.page-section{
+  padding: 4rem 0;
+}
+
+.footer-info{
+  background-color: #000;
+}
+
+.footer-title{
+  color: #fff;
+  font-family: 'Kanit',sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 46px;
+}
+
+.copyright{
+  color:#c0aa83;
+  font-family: 'Kanit',sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.subscribe-section{
+  background-image: url("../img/footer_map.png");
+  background-color:#242424;
+}
+
+.contact-heading{
+  color: #c0aa83;
+  font-family: 'Kanit',sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.contact-info{
+  color: #fff;
+  font-family: 'Kanit',sans-serif;
+  font-size: 14px;
+}
+
+a.explore-link{
+  color: #fff;
+  font-family: 'Kanit',sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+a.explore-link:hover{
+  color: #c0aa83;
+  font-family: 'Kanit',sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.logo-text-white{
+  color: #fff;
+  font-family: 'Kanit',sans-serif;
+  font-size: 16px;
+}
+
+/*PRODUCT PAGE STYLING*/

@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding-top: 40px;
+    color: #2e323c;
+    background: #f5f6fa;
+    position: relative;
+    height: auto;
+    overflow-y: hidden;
+    background: rgb(227, 242, 253);
+}
+
+#addItemForm,
+#itemProfileForm{
+    padding-left: 250px;
+    padding-top:20px;
+    background: rgb(227, 242, 253);
+/*    height: auto;
+    width: 100vw;
+    overflow-x:hidden;*/
+}
+#addItemForm.dark-mode,
+#itemProfileForm.dark-mode{
+    padding-left: 250px;
+    padding-top:20px;
+    background: grey;
+}
+
+#addItemContainer,
+#itemProfileContainer {
+    display:block;
+    background: rgb(227, 242, 253);
+}
+#addItemContainer.dark-mode,
+#itemProfileContainer.dark-mode {
+    display:block;
+    background: grey;
+}
+
+.form-control {
+    border: 1px solid #cfd1d8;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    font-size: .825rem;
+    background: #ffffff;
+    color: #2e323c;
+}
+
+.card {
+    background: #ffffff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 0;
+    margin-bottom: 1rem;
+}
+
+#addItemCardBody,
+#itemProfileCardBody{
+    background: white;
+}
+.card-body#addItemCardBody.dark-mode,
+.card-body#itemProfileCardBody.dark-mode {
+    background: #312f2f !important;
+}
+#manageItem .nav-link{
+    padding: 0;     /*override nav link*/
+}

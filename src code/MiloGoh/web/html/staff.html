@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sidebar Menu | Side Navigation Bar</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/staffStyle.css" />
+  <!-- Boxicons CSS -->
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <span class="logo-name">Manager Page</span>
+    </div>
+    <div class="sidebar">
+      <div class="logo">
+        <span class="logo-name">Manager Page</span>
+      </div>
+      <div class="sidebar-content">
+        <ul class="lists">
+          <li class="list active" data-content="home">
+            <a href="#" class="nav-link">
+              <i class="bx bx-home-alt icon"></i>
+              <span class="link">Home</span>
+            </a>
+          </li>
+          <li class="list" data-content="createStaff">
+            <a href="#" class="nav-link">
+              <i class="bx bx-plus-circle icon"></i>
+              <span class="link">Create Staff</span>
+            </a>
+          </li>
+          <li class="list" data-content="manageCustomer">
+            <a href="#" class="nav-link">
+              <i class="bx bx-archive icon"></i>
+              <span class="link">Manage Customer</span>
+            </a>
+          </li>
+          <li class="list" data-content="manageItem">
+            <a href="#" class="nav-link">
+              <i class="bx bx-store icon"></i>
+              <span class="link">Manage Item</span>
+            </a>
+          </li>
+          <li class="list" data-content="manageStaff">
+            <a href="#" class="nav-link">
+              <i class="bx bx-wrench icon"></i>
+              <span class="link">Manage Staff</span>
+            </a>
+          </li>
+          <li class="list" data-content="salesRecords">
+            <a href="#" class="nav-link">
+              <i class="bx bx-file icon"></i>
+              <span class="link">Sales Records</span>
+            </a>
+          </li>
+          <li class="list" data-content="salesReport">
+            <a href="#" class="nav-link">
+              <i class="bx bx-line-chart icon"></i>
+              <span class="link">Sales Report</span>
+            </a>
+          </li>
+        </ul>
+        <div class="bottom-content">
+          <li class="list" data-content="setting">
+            <a href="#" class="nav-link">
+              <i class="bx bx-cog icon"></i>
+              <span class="link">Settings</span>
+            </a>
+          </li>
+          <li class="list" data-content="logout">
+            <a href="#" class="nav-link">
+              <i class="bx bx-log-out icon"></i>
+              <span class="link">Logout</span>
+            </a>
+          </li>
+        </div>
+      </div>
+    </div>
+  </nav>
+    
+    <div class="body-content">
+        <section class="content" id="home">
+            <h1>Home Content</h1>
+        </section>
+
+        <!-- create staff -->
+        <section class="content" id="createStaff" style="display: none;">
+            <div class="form signup">
+                <div class="form-content">
+                    <header>Signup</header>
+                    <form action="../SignupServlet" method="post">
+
+                        <div class="form-section">
+                            <div class="left-form-section">
+                                First Name
+                                <div class="field input-field">
+                                    <input type="text" placeholder="First Name" class="input" name="firstName" id="firstName" required value="<%= firstName%>">
+                                </div>
+                                Last Name
+                                <div class="field input-field">
+                                    <input type="text" placeholder="Last Name" class="input" name="lastName" id="lastName" required value="<%= lastName%>">
+                                </div>
+                                Email
+                                <div class="field input-field">
+                                    <input type="email" placeholder="Email" class="input" name="gmail" id="gmail" required value="<%= gmail%>">
+                                </div>
+                                Phone Number
+                                <div class="field input-field">
+                                    <input type="tel" placeholder="Phone Number" class="input" name="phoneNumber" id="phoneNumber" required value="<%= phoneNumber%>">
+                                </div>
+                                Gender
+                                <select name="gender" id="gender" class="field input-field" required>
+                                    <option value="Male" >>Male</option>
+                                    <option value="Male" >>Female</option>
+                                    <option value="Male" >>Other</option>
+                                </select>
+
+
+                                <div style="padding-top:15px">
+                                    <label>
+                                        <input type="radio" name="correctRadioButton" value="true" required>
+                                        Yes, the entered information is correct
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="right-form-section">
+                                Address
+                                <div class="field input-field">
+                                    <input type="text" placeholder="Address" class="input" name="address" id="address" required value="<%= address%>">
+                                </div>
+                                IC
+                                <div class="field input-field">
+                                    <input type="text" placeholder="IC Number" class="input" name="ic" id="ic" required value="<%= ic%>">
+                                </div>
+                                Birthday
+                                <div class="field input-field">
+                                    <input type="date" placeholder="Birthday" class="input" name="birthday" id="birthday" required value="<%= birthday%>">
+                                </div>
+                                Username
+                                <div class="field input-field">
+                                    <input type="text" placeholder="Username" class="input" name="username" id="username" required value="<%= username%>">
+                                </div>
+                                Password 
+                                <div class="field input-field">
+                                    <input type="password" placeholder="Password" class="password" name="password" id="password" required>
+                                    <i class='bx bx-hide eye-icon'></i>
+                                </div>
+                                Confirm password
+                                <div class="field input-field">
+                                    <input type="password" placeholder="Confirm password" class="password" name="confirmPassword" id="confirmPassword" required>
+                                    <i class='bx bx-hide eye-icon'></i>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <small style="color: red">Password length must be more than 6 and include at least 1 lower, upper, special, number character</small>
+
+                        <div class="field button-field">
+                            <button>Signup</button>
+                        </div>
+                    </form>
+
+                    <div class="form-link">
+                        <span>Already have an account? <a href="login.jsp" class="link login-link">Login</a></span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+        <!-- manage customer -->
+        <section class="content" id="manageCustomer" style="display: none;">
+            <h1>Manage Customer Content</h1>
+        </section>
+
+        <!-- manage item -->
+        <section class="content" id="manageItem" style="display: none;">
+            <h1>Manage Item Content</h1>
+        </section>
+
+        <!-- manage staff -->
+        <section class="content" id="manageStaff" style="display: none;">
+            <h1>Manage Staff Content</h1>
+        </section>
+
+        <!-- sales records -->
+        <section class="content" id="salesRecords" style="display: none;">
+            <h1>Sales Records Content</h1>
+        </section>
+        
+        <!-- sales report -->
+        <section class="content" id="salesReport" style="display: none;">
+            <h1>Sales Report Content</h1>
+        </section>
+     
+    </div>
+    
+
+  <script src="../js/staff.js"></script>
+</body>
+</html>
