@@ -6,15 +6,15 @@ This project is a web application, likely an e-commerce or product management sy
 
 Here are some screenshots of the application's user interface:
 
-*   [`Admin Manage Item`](readme/admin_manage_item.jpeg)
-*   [`Cart Page`](readme/cart_page.jpeg)
-*   [`Home Page`](readme/home_page.jpeg)
-*   [`Login`](readme/login.jpeg)
-*   [`My Order History`](readme/my_order_history.jpeg)
-*   [`My Order History Details`](readme/my_order_history_details.jpeg)
-*   [`Product Details`](readme/product_details.jpeg)
-*   [`Product Overview`](readme/product_overview.jpeg)
-*   [`Topup`](readme/topup.jpeg)
+*   ![Admin Manage Item](readme/admin_manage_item.jpeg)
+*   ![Cart Page](readme/cart_page.jpeg)
+*   ![Home Page](readme/home_page.jpeg)
+*   ![Login](readme/login.jpeg)
+*   ![My Order History](readme/my_order_history.jpeg)
+*   ![My Order History Details](readme/my_order_history_details.jpeg)
+*   ![Product Details](readme/product_details.jpeg)
+*   ![Product Overview](readme/product_overview.jpeg)
+*   ![Topup](readme/topup.jpeg)
 
 ## Installation
 
